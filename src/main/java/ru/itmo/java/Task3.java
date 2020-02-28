@@ -177,15 +177,19 @@ public class Task3 {
     int[][] matrixTranspose(int[][] m) {
         if (m == null) return new int[][]{{}, {}};
 
+
         int size = m.length;
         int[][] transposed = new int[size][size];
 
+        try{
             for (int i = 0; i < size; ++i) {
                 for (int j = 0; j < size; ++j) {
                     transposed[j][i] = m[i][j];
                 }
             }
-
+        } catch (Exception e) {
+            return new int[][]{{}, {}};
+        }
             return transposed;
 
     }
