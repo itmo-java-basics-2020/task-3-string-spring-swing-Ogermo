@@ -175,12 +175,11 @@ public class Task3 {
      * Если входной массив == null - вернуть пустой массив
      */
     int[][] matrixTranspose(int[][] m) {
-        if (m == null || m.length == 0 ) return new int[][]{{}, {}};
+        if (m == null || m.length == 0 || m[0].length == 0 ) return new int[][]{{}, {}};
 
 
 
         int size = m.length;
-
         int[][] transposed = new int[size][size];
 
             for (int i = 0; i < size; ++i) {
