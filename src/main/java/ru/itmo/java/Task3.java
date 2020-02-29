@@ -180,9 +180,7 @@ public class Task3 {
 
 
         int size = m.length;
-        if (m.length == 0){
-            return new int[][]{{}, {}};
-        }
+
         int[][] transposed = new int[size][size];
 
             for (int i = 0; i < size; ++i) {
